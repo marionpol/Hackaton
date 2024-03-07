@@ -1,0 +1,12 @@
+body {
+    background-image:url("img/Artboard_1.png");
+    background-size: cover; 
+    background-repeat: no-repeat;  
+}
+
+
+
+
+.text h1{
+    color: bisque;
+}
