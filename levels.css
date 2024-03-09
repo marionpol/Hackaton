@@ -16,6 +16,7 @@ a {
     justify-content: center;
     text-align: center;
     font-size: 34px;
+    margin: 3rem;
 }
 
 .grid_container{
@@ -44,4 +45,27 @@ a {
 a:hover {
     color: #9fe496; 
     transition: 0.2s;
+}
+
+.button_container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.button {
+    display: inline-block;
+    padding: 1rem 3rem;
+    background-color: #ffb8b8; 
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 2rem;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #f3f3f3; 
 }
