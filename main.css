@@ -16,12 +16,13 @@ body {
 }
 
 .text_container{
-    background-color: rgba(153, 153, 153, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     align-items: center;
     justify-content: center;
     padding: 4rem 2rem;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 2rem;
+    font-size: 24px;
 }
 
 .button_container {
@@ -32,17 +33,17 @@ body {
 .button {
     display: inline-block;
     padding: 1rem 3rem;
-    background-color: #a1a1a1; 
+    background-color: #68f756; 
     border: none;
     color: black;
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 24px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 2rem;
     transition: background-color 0.3s;
 }
 
 .button:hover {
-    background-color: #cccccc; 
+    background-color: #dbfdc0; 
 }

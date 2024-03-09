@@ -4,25 +4,44 @@ body {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+    
+}
 
 .head_text h2{
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    font-size: 34px;
 }
 
 .grid_container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 10px;
-    row-gap: 1em;
+    align-items: center;
+    justify-content: center;
+    max-width: 700px;
+    gap: 3rem; 
+    margin: auto;
 }
 
-.level_box{
-    background-color: bisque;
-    justify-content: space-evenly;
+.grid_container .level_box {
+    display: flex;
+    background-color: rgb(233, 253, 222);
+    position: relative;
+    text-align: center;
     padding: 2rem;
     width: 10rem;
     font-size: 40px;
+    flex-direction: column;
+    border: 5px solid #9fe496;
+    border-radius: 2rem;
+}
+
+a:hover {
+    color: #9fe496; 
+    transition: 0.2s;
 }
