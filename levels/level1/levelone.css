@@ -23,6 +23,9 @@ body {
     background-size: cover;
     padding: 20px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header, footer {
@@ -36,11 +39,49 @@ header, footer {
 header a {
     text-decoration: none;
     color: white;
-} 
+}
 
-.content {
+.battle-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-top: 10rem;
+}
+
+.textbox-container {
+    margin-right: 20px;
+    flex-direction: row;
+    border: 2px solid gold;
+    background-color: #8a2be2; /* Use a purple color, you can adjust the shade as needed */
+    padding: 10px;
+    border-radius: 8px; /* Optional: Add border-radius for rounded corners */
+}
+
+.answer-boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.answer-box {
+    width: 100px;
+    height: 50px;
+    background-color: #ccc;
+    margin-bottom: 10px;
+}
+
+.characters-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.picture-container {
+    margin-top: 20px;
+}
+
+.left, .right {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
 }
