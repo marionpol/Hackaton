@@ -1,21 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image:url("levels/img/Artboard_1.png");
-    background-size: cover; 
-    background-repeat: no-repeat;  
+    min-height: 100vh;
+    min-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    background-color: #2D2D2D;
 }
 
+.container {
+    width: 1000px;
+    height: 800px;
+    margin: auto;
+    background-image: url("levels/img/Artboard_1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+}
 
-.content{
+header a {
+    text-decoration: none;
+    color: white;
+} 
+
+header, footer {
+    background-color: #3e2b3e;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.content {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 10rem;
 }
 
-.text_container{
+.text_container {
     background-color: rgba(255, 255, 255, 0.8);
     align-items: center;
     justify-content: center;
@@ -33,7 +62,7 @@ body {
 .button {
     display: inline-block;
     padding: 1rem 3rem;
-    background-color: #68f756; 
+    background-color: #68f756;
     border: none;
     color: black;
     text-align: center;
@@ -45,5 +74,5 @@ body {
 }
 
 .button:hover {
-    background-color: #dbfdc0; 
+    background-color: #dbfdc0;
 }

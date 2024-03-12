@@ -1,14 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    min-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    background-color: #2D2D2D;
 }
 
 a {
     text-decoration: none;
     color: black;
-    
 }
+
+header a {
+    text-decoration: none;
+    color: white;
+} 
 
 .head_text h2{
     display: flex;
@@ -35,7 +48,6 @@ a {
     position: relative;
     text-align: center;
     padding: 2rem;
-    width: 10rem;
     font-size: 40px;
     flex-direction: column;
     border: 5px solid #9fe496;
@@ -68,4 +80,23 @@ a:hover {
 
 .button:hover {
     background-color: #f3f3f3; 
+}
+
+.container {
+    width: 1000px;
+    height: 800px;
+    margin: auto;
+    background-image: url("levels/img/Artboard_1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+}
+
+header, footer {
+    background-color: #3e2b3e;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
 }
