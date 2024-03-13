@@ -22,6 +22,16 @@ body {
     background-size: cover;
     padding: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container img {
+    height: auto;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header a {
@@ -41,7 +51,6 @@ header, footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10rem;
 }
 
 .text_container {
