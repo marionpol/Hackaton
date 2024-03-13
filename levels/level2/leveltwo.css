@@ -18,7 +18,7 @@ body {
     height: 800px;
     margin: auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-image: url("/levels/img/Artboard_1.png");
+    background-image: url("/levels/img/magicalforestmushroomlevel1-pixelicious.png");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 20px;
@@ -49,6 +49,16 @@ header a {
     justify-content: space-between;
 }
 
+.left {
+    margin-top: 10rem;
+    backdrop-filter: blur(1px);
+}
+
+.right img {
+    backdrop-filter: blur(1px);
+    
+}
+
 .column-container img {
     height: 50%;
 }
@@ -61,26 +71,54 @@ header a {
     height: auto;
 }
 
+.whole-textbox-container {
+    margin-top: 6rem;
+}
+
 .textbox-container, .answer-boxes {
     text-align: center;
+    color: white;
     margin-top: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 2rem;
 }
 
 .answer-boxes {
     display: flex;
     justify-content: space-around;
     margin-top: 10px;
+    font-size: 24px;
 }
 
 .answer-box {
     background-color: #f0f0f0;
     padding: 10px 20px;
     cursor: pointer;
+    
 }
+
+.button {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 5px 20px;
+    background-color: #5DFDCB;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 2rem;
+    transition: background-color 0.3s;
+}
+
 .picture-container img {
-    height: 100%; /* Set a fixed height */
+    height: 100%; 
 }
 .hp {
     color: white;
     font-weight: bold;
+    margin-top: 1rem;
+    font-size: 24px;
 }
