@@ -12,7 +12,6 @@ let questions = [
         answers: ["Aatom, mis on kaotanud või saanud elektrone", "Aatom, mis on kaotanud prootone", "Aine, mis koosneb ainult ühest molekulist", "Aatom, mis on kaotanud neutroone"],
         correctAnswer: "Aatom, mis on kaotanud või saanud elektrone"
     },
-    // Add more questions here
 ];
 let mainCharacterHp = 100;
 let opponentCharacterHp = 100;
@@ -36,7 +35,7 @@ function checkAnswer(selectedAnswer) {
     const feedbackElement = document.getElementById('feedback');
     if (selectedAnswer === questions[currentQuestionIndex].correctAnswer) {
         feedbackElement.textContent = 'Õige! Järgmine monster!';
-        opponentCharacterHp -= 20; // Example damage to opponent
+        opponentCharacterHp -= 20; // Damage to opponent
         document.getElementById('opponentCharacterHp').textContent = `HP: ${opponentCharacterHp}`;
         currentQuestionIndex++;
         if (currentQuestionIndex < questions.length) {
@@ -47,12 +46,12 @@ function checkAnswer(selectedAnswer) {
         }
     } else {
         feedbackElement.textContent = 'Vale! Proovi uuesti!';
-        mainCharacterHp -= 20; // Example damage to main character
+        mainCharacterHp -= 20; // Damage to main character
         document.getElementById('mainCharacterHp').textContent = `HP: ${mainCharacterHp}`;
     }
 }
 
-// Add event listener to the 'next' button to manually proceed to the next question
+// Event listener to manually proceed to the next question
 document.getElementById('nextButton').addEventListener('click', () => {
     if (currentQuestionIndex < questions.length) {
         showQuestion();
