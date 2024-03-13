@@ -3,9 +3,9 @@
 }
 
 body {
-    font-family: "Schoolbell", cursive;
-    font-weight: 400;
-    font-style: normal;
+      font-family: "Schoolbell", cursive;
+  font-weight: 400;
+  font-style: normal;
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -73,7 +73,7 @@ header, footer {
 .button {
     display: inline-block;
     padding: 1rem 3rem;
-    background-color: #68f756;
+    background-color: #5DFDCB;
     border: none;
     color: black;
     text-align: center;
@@ -85,5 +85,5 @@ header, footer {
 }
 
 .button:hover {
-    background-color: #dbfdc0;
+    background-color: #a1ffe1;
 }

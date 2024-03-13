@@ -46,18 +46,18 @@ header a {
 
 .grid_container .level_box {
     display: flex;
-    background-color: rgb(233, 253, 222);
+    background-color: rgba(222, 208, 255, 0.76);
     position: relative;
     text-align: center;
     padding: 2rem;
     font-size: 40px;
     flex-direction: column;
-    border: 5px solid #9fe496;
+    border: 5px solid #5DFDCB;
     border-radius: 2rem;
 }
 
 .level_box a:hover {
-    color: #9fe496; 
+    color: #5DFDCB; 
     transition: 0.2s;
 }
 
@@ -69,7 +69,7 @@ header a {
 .button {
     display: inline-block;
     padding: 1rem 3rem;
-    background-color: #ff8f8f; 
+    background-color: #AB87FF; 
     border: none;
     color: black;
     text-align: center;
@@ -81,7 +81,7 @@ header a {
 }
 
 .button:hover {
-    background-color: #fdb4b4; 
+    background-color: #c4acfd; 
 }
 
 .container {
