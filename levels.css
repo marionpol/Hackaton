@@ -12,7 +12,8 @@ body {
     min-width: 1000px;
     display: flex;
     flex-direction: column;
-    background-color: #2D2D2D;
+    background: rgb(45,45,45);
+    background: linear-gradient(180deg, rgba(45,45,45,1) 0%, rgba(28,28,28,1) 50%, rgba(5,5,5,1) 100%);
 }
 
 a {
@@ -23,7 +24,12 @@ a {
 header a {
     text-decoration: none;
     color: white;
+    transition: 0.3s;
 } 
+
+header a:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
 
 .head_text h2{
     display: flex;
@@ -102,4 +108,12 @@ header, footer {
     padding: 10px;
     text-align: center;
     width: 100%;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-top: 70px;
 }

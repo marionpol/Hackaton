@@ -3,16 +3,17 @@
 }
 
 body {
-      font-family: "Schoolbell", cursive;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Schoolbell", cursive;
+    font-weight: 400;
+    font-style: normal;
     margin: 0;
     padding: 0;
     min-height: 100vh;
     min-width: 1000px;
     display: flex;
     flex-direction: column;
-    background-color: #2D2D2D;
+    background: rgb(45,45,45);
+    background: linear-gradient(180deg, rgba(45,45,45,1) 0%, rgba(28,28,28,1) 50%, rgba(5,5,5,1) 100%);;
 }
 
 .container {
@@ -39,7 +40,12 @@ body {
 header a {
     text-decoration: none;
     color: white;
+    transition: 0.3s;
 } 
+
+header a:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
 
 header, footer {
     background-color: #3e2b3e;
@@ -47,6 +53,14 @@ header, footer {
     padding: 10px;
     text-align: center;
     width: 100%;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-top: 70px;
 }
 
 .content {
