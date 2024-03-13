@@ -3,9 +3,7 @@
 }
 
 body {
-    font-family: "Schoolbell", cursive;
-    font-weight: 400;
-    font-style: normal;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -38,11 +36,51 @@ header, footer {
 header a {
     text-decoration: none;
     color: white;
-} 
+}
 
 .content {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 10rem;
+}
+.column-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column-container img {
+    height: 50%;
+}
+.picture-container {
+    flex-basis: 50%;
+}
+
+.picture-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.textbox-container, .answer-boxes {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.answer-boxes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.answer-box {
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.picture-container img {
+    height: 100%; /* Set a fixed height */
+}
+.hp {
+    color: white;
+    font-weight: bold;
 }

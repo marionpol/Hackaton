@@ -1,0 +1,12 @@
+[
+  {
+    "text": "Milline keemiline side tekkib metalli aatomite vahel, kus nad jagavad vabalt liiguvaid elektrone?",
+    "answers": ["Kovalentne side", "Metalliline side", "Iooniline side", "Vesinikside"],
+    "correctAnswer": "Metalliline side"
+  },
+  {
+    "text": "Mis on ioon?",
+    "answers": ["Aatom, mis on kaotanud või saanud elektrone", "Aatom, mis on kaotanud prootone", "Aine, mis koosneb ainult ühest molekulist", "Aatom, mis on kaotanud neutroone"],
+    "correctAnswer": "Aatom, mis on kaotanud või saanud elektrone"
+  }
+]
