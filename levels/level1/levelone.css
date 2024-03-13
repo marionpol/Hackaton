@@ -3,21 +3,23 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Schoolbell", cursive;
+    font-weight: 400;
+    font-style: normal;
     margin: 0;
     padding: 0;
     min-height: 100vh;
     min-width: 1000px;
     display: flex;
     flex-direction: column;
-    background-color: #2D2D2D;
+    background: rgb(45,45,45);
+    background: linear-gradient(180deg, rgba(45,45,45,1) 0%, rgba(28,28,28,1) 50%, rgba(5,5,5,1) 100%);
 }
 
 .container {
     width: 1000px;
     height: 800px;
     margin: auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-image: url("/levels/img/Artboard_1.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,6 +28,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 
 header, footer {
@@ -34,11 +37,25 @@ header, footer {
     padding: 10px;
     text-align: center;
     width: 100%;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-top: 70px;
 }
 
 header a {
     text-decoration: none;
     color: white;
+    transition: 0.3s;
+}
+
+header a:hover {
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .battle-container {
