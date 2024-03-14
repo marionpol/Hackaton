@@ -75,7 +75,7 @@ function checkAnswer(selectedAnswer) {
     document.querySelectorAll('#answers button').forEach(button => button.disabled = true);
 
     if (selectedAnswer === questions[currentQuestionIndex].correctAnswer) {
-        feedbackElement.innerHTML = '<span style="color: green;">Correct!</span>';
+        feedbackElement.innerHTML = '<span style="color: green;">Õige!</span>';
         opponents[currentOpponentIndex].hp -= 20;
         document.getElementById('opponentCharacterHp').textContent = `HP: ${opponents[currentOpponentIndex].hp}`;
         // Add shake effect to opponent when taking damage
@@ -94,12 +94,12 @@ function checkAnswer(selectedAnswer) {
             showQuestion();
         }, 1000); // Wait for 1 sec before moving to the next question or opponent
     } else {
-        feedbackElement.innerHTML = '<span style="color: red;">Incorrect! Try again.</span>';
+        feedbackElement.innerHTML = '<span style="color: red;">Vale vastus! Proovi uuesti.</span>';
         mainCharacterHp -= 20;
         document.getElementById('mainCharacterHp').textContent = `HP: ${mainCharacterHp}`;
 
         if (mainCharacterHp <= 0) {
-            mainCharacter.src ='../img/jukudead.png';
+            mainCharacter.src ='../img/jukuX-X.gif';
             setTimeout(() => {
                 alert("Game Over! You've lost all your HP.");
                 window.location.href = '../../levels.html';

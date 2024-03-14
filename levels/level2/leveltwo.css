@@ -89,7 +89,7 @@ header a:hover {
 }
 
 .whole-textbox-container {
-    margin-top: 6rem;
+    margin-top: 4rem;
 }
 
 .textbox-container, .answer-boxes {
@@ -139,8 +139,7 @@ header a:hover {
 }
 
 .answer-boxes button:hover {
-    transform: scale(1.1);
-    background-color: #c4acfd;
+    transform: scale(1.05);
 }
 
 .picture-container img {
@@ -157,6 +156,14 @@ header a:hover {
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+}
+
+#feedback {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 20px;
+    margin-top: 10px;
 }
 
 @keyframes shake {
