@@ -38,17 +38,7 @@ let questions = [
         text: "Kuidas nimetatakse ainet, mis koosneb vaid ühest keemilisest elemendist?",
         answers: ["Segu", "Liitaine", "Lihtaine", "Komposiitmaterjal"],
         correctAnswer: "Lihtaine"
-    },
-    {
-        text: "Milline termin kirjeldab ainet, mis on moodustunud kahest või enamast keemiliselt seotud erinevast keemilisest elemendist?",
-        answers: ["Lihtaine", "Segu", "Liitaine", "Kovalentne ühend"],
-        correctAnswer: "Liitaine"
-    },
-    {
-        text: "Kuidas tekivad molekulaarsed ained?",
-        answers: ["Iooniliste sidemete kaudu", "Kovalentsete sidemete kaudu", "Metalliliste sidemete kaudu", "Füüsikalise segunemise teel"],
-        correctAnswer: "Kovalentsete sidemete kaudu"
-    },
+    }
 ];
 
 function updateOpponentDisplay() {
@@ -61,11 +51,6 @@ function updateOpponentDisplay() {
 }
 
 function showQuestion() {
-    if (currentQuestionIndex >= questions.length) {
-        alert("All questions answered!");
-        return;
-    }
-
     const question = questions[currentQuestionIndex];
     document.getElementById('question').innerHTML = `<p>${question.text}</p>`;
     
@@ -95,21 +80,13 @@ function checkAnswer(selectedAnswer) {
         document.getElementById('opponentCharacterHp').textContent = `HP: ${opponents[currentOpponentIndex].hp}`;
 
         if (opponents[currentOpponentIndex].hp <= 0) {
-            if (currentOpponentIndex < opponents.length - 1) {
-                feedbackElement.innerHTML += ' <span style="color: blue;">You defeated the opponent! Next opponent comes.</span>';
-                currentOpponentIndex++;
-                updateOpponentDisplay();
-            } else {
-                feedbackElement.innerHTML += ' <span style="color: blue;">All opponents defeated! Congratulations!</span>';
-                // Additional logic for game completion can be added here
-            }
+            setTimeout(() => {
+                alert("Sa alistasid vastase! Liigu järgmisele tasemele");
+                window.location.href = '../../levels.html';
+            }, 1500);
         }
-        
         setTimeout(() => {
             currentQuestionIndex++;
-            if (currentQuestionIndex >= questions.length) {
-                currentQuestionIndex = 0; // Reset questions if they run out
-            }
             showQuestion();
         }, 1000); // Wait for 1 sec before moving to the next question or opponent
     } else {
@@ -118,9 +95,10 @@ function checkAnswer(selectedAnswer) {
         document.getElementById('mainCharacterHp').textContent = `HP: ${mainCharacterHp}`;
 
         if (mainCharacterHp <= 0) {
+            mainCharacter.src ='../img/juku_dead.gif';
             setTimeout(() => {
                 alert("Game Over! You've lost all your HP.");
-                window.location.href = 'levels.html';
+                window.location.href = '../../levels.html';
             }, 1500);
         } else {
             // Re-enable buttons if game is not over
