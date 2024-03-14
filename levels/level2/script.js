@@ -38,17 +38,7 @@ let questions = [
         text: "Kuidas nimetatakse ainet, mis koosneb vaid ühest keemilisest elemendist?",
         answers: ["Segu", "Liitaine", "Lihtaine", "Komposiitmaterjal"],
         correctAnswer: "Lihtaine"
-    },
-    {
-        text: "Milline termin kirjeldab ainet, mis on moodustunud kahest või enamast keemiliselt seotud erinevast keemilisest elemendist?",
-        answers: ["Lihtaine", "Segu", "Liitaine", "Kovalentne ühend"],
-        correctAnswer: "Liitaine"
-    },
-    {
-        text: "Kuidas tekivad molekulaarsed ained?",
-        answers: ["Iooniliste sidemete kaudu", "Kovalentsete sidemete kaudu", "Metalliliste sidemete kaudu", "Füüsikalise segunemise teel"],
-        correctAnswer: "Kovalentsete sidemete kaudu"
-    },
+    }
 ];
 
 function updateOpponentDisplay() {
