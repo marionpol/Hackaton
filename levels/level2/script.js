@@ -57,6 +57,14 @@ let questions = [
 
 ];
 
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]]; // vaheta elementide asukohti
+    }
+}
+
+
 function updateOpponentDisplay() {
     if (currentOpponentIndex < opponents.length) {
         const currentOpponent = opponents[currentOpponentIndex];
@@ -67,19 +75,29 @@ function updateOpponentDisplay() {
 }
 
 function showQuestion() {
+    if (currentQuestionIndex >= questions.length) {
+        // Kui kõik küsimused on vastatud, või mõni muu loogika
+        return;
+    }
+
     const question = questions[currentQuestionIndex];
     document.getElementById('question').innerHTML = `<p>${question.text}</p>`;
     
     const answersElement = document.getElementById('answers');
-    answersElement.innerHTML = ''; // Clear previous answers
+    answersElement.innerHTML = ''; // Tühjenda eelnevad vastused
     
-    question.answers.forEach(answer => {
+    // Sega valikvastused
+    const shuffledAnswers = [...question.answers];
+    shuffleArray(shuffledAnswers);
+    
+    shuffledAnswers.forEach(answer => {
         const button = document.createElement('button');
         button.textContent = answer;
         button.addEventListener('click', () => checkAnswer(answer));
         answersElement.appendChild(button);
     });
 }
+
 
 function checkAnswer(selectedAnswer) {
     const feedbackElement = document.getElementById('feedback');

@@ -90,6 +90,8 @@ header a:hover {
 
 .whole-textbox-container {
     margin-top: 4rem;
+    background-color: rgba(45,45,45,1);
+    border-radius: 2em;
 }
 
 .textbox-container, .answer-boxes {
