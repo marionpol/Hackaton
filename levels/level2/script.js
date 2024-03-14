@@ -95,14 +95,10 @@ function checkAnswer(selectedAnswer) {
         document.getElementById('opponentCharacterHp').textContent = `HP: ${opponents[currentOpponentIndex].hp}`;
 
         if (opponents[currentOpponentIndex].hp <= 0) {
-            if (currentOpponentIndex < opponents.length - 1) {
-                feedbackElement.innerHTML += ' <span style="color: blue;">You defeated the opponent! Next opponent comes.</span>';
-                currentOpponentIndex++;
-                updateOpponentDisplay();
-            } else {
-                feedbackElement.innerHTML += ' <span style="color: blue;">All opponents defeated! Congratulations!</span>';
-                // Additional logic for game completion can be added here
-            }
+            setTimeout(() => {
+                alert("Sa alistasid vastase! Liigu järgmisele tasemele");
+                window.location.href = '../../levels.html';
+            }, 1500);
         }
         
         setTimeout(() => {
