@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Schoolbell", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    min-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    background: rgb(45,45,45);
+    background: linear-gradient(180deg, rgba(45,45,45,1) 0%, rgba(28,28,28,1) 50%, rgba(5,5,5,1) 100%);
+}
+
+.container {
+    width: 1000px;
+    height: 800px;
+    margin: auto;
+    background-image: url("/levels/img/magicalforestmushroomlevel1-pixelicious.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+header, footer {
+    background-color: #3e2b3e;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-top: 70px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+header a:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+}
+.column-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    margin-top: 10rem;
+    backdrop-filter: blur(1px);
+}
+
+.right img {
+    backdrop-filter: blur(1px);
+    
+}
+
+.column-container img {
+    height: 50%;
+}
+.picture-container {
+    flex-basis: 50%;
+}
+
+.picture-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.whole-textbox-container {
+    margin-top: 4rem;
+}
+
+.textbox-container, .answer-boxes {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.answer-boxes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.answer-box {
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    cursor: pointer;
+    
+}
+
+.answer-boxes button {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 10px 10px;
+    margin: 5px;
+    background-color: #5DFDCB;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 2rem;
+    transition: background-color 0.3s;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.answer-boxes button:disabled {
+    background-color: gray;
+}
+
+.answer-boxes button:hover {
+    transform: scale(1.05);
+}
+
+.picture-container img {
+    height: 100%; 
+}
+.hp {
+    color: white;
+    font-weight: bold;
+    margin-top: 1rem;
+    font-size: 24px;
+}
+
+.rpg-textbox {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+#feedback {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+  }
+  
+  .shake {
+    animation: shake 0.5s ease-in-out;
+  }
+  
+  .damage-taken {
+    background-color: rgba(255, 0, 0, 0.2); /* Light red screen overlay */
+    transition: background-color 0.5s ease-in-out;
+  }
+  
+  /* Ensure the body or game screen transitions back to its original state smoothly */
+  body {
+    transition: background-color 0.5s ease-in-out;
+  }
+  
