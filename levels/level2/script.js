@@ -51,11 +51,6 @@ function updateOpponentDisplay() {
 }
 
 function showQuestion() {
-    if (currentQuestionIndex >= questions.length) {
-        alert("All questions answered!");
-        return;
-    }
-
     const question = questions[currentQuestionIndex];
     document.getElementById('question').innerHTML = `<p>${question.text}</p>`;
     
@@ -90,12 +85,8 @@ function checkAnswer(selectedAnswer) {
                 window.location.href = '../../levels.html';
             }, 1500);
         }
-        
         setTimeout(() => {
             currentQuestionIndex++;
-            if (currentQuestionIndex >= questions.length) {
-                currentQuestionIndex = 0; // Reset questions if they run out
-            }
             showQuestion();
         }, 1000); // Wait for 1 sec before moving to the next question or opponent
     } else {
