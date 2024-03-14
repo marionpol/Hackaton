@@ -175,6 +175,7 @@ header a:hover {
     font-style: normal;
     font-size: 20px;
     margin-top: 10px;
+    padding-bottom: 10px;
 }
 
 @keyframes shake {

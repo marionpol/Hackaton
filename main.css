@@ -140,7 +140,6 @@ footer {
     z-index: 9999;
 }
 
-
 @keyframes modalFadeIn {
     from {
         opacity: 0;
