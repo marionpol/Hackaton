@@ -108,6 +108,7 @@ header a:hover {
     justify-content: space-around;
     margin-top: 10px;
     font-size: 24px;
+    padding-bottom: 10px;
 }
 
 .answer-box {
@@ -174,6 +175,7 @@ header a:hover {
     font-style: normal;
     font-size: 20px;
     margin-top: 10px;
+    padding-bottom: 10px;
 }
 
 @keyframes shake {
