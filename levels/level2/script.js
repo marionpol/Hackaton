@@ -78,6 +78,10 @@ function checkAnswer(selectedAnswer) {
         feedbackElement.innerHTML = '<span style="color: green;">Correct!</span>';
         opponents[currentOpponentIndex].hp -= 20;
         document.getElementById('opponentCharacterHp').textContent = `HP: ${opponents[currentOpponentIndex].hp}`;
+        // Add shake effect to opponent when taking damage
+        opponentCharacter.classList.add('shake');
+        setTimeout(() => opponentCharacter.classList.remove('shake'), 500); // Remove shake effect after 0.5 seconds
+
 
         if (opponents[currentOpponentIndex].hp <= 0) {
             setTimeout(() => {
