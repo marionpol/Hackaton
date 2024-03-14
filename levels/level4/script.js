@@ -15,30 +15,30 @@ const opponents = [
 // Questions array remains the same
 let questions = [
     {
-        text: "Milline keemiline side tekkib metalli aatomite vahel, kus nad jagavad vabalt liiguvaid elektrone?",
-        answers: ["Kovalentne side", "Metalliline side", "Iooniline side", "Vesinikside"],
-        correctAnswer: "Metalliline side"
+        text: "Mis olukorras võib öelda, et reaktsioonivõrrand on tasakaalus?",
+        answers: ["Kui sama elemendi aatomeid on lähteainetes ja saadustes sama palju", "Kui reaktsioonis osaleb võrdne arv molekule mõlemalt poolt", "Kui reaktsiooni soojusefekt on null", "Kui saaduste mass on võrdne lähteainete massiga"],
+        correctAnswer: "Kui sama elemendi aatomeid on lähteainetes ja saadustes sama palju"
     },
     {
-        text: "Mis on ioon?",
-        answers: ["Aatom, mis on kaotanud või saanud elektrone", "Aatom, mis on kaotanud prootone", "Aine, mis koosneb ainult ühest molekulist", "Aatom, mis on kaotanud neutroone"],
-        correctAnswer: "Aatom, mis on kaotanud või saanud elektrone"
+        text: "Kuidas nimetatakse reaktsioonivõrrandis vasakul pool olevaid aineid?",
+        answers: ["Lähteained", "Saadused", "Katalüsaatorid", "Tooted"],
+        correctAnswer: "Lähteained"
     },
     {
-        text: "Mis on see keemiline side, mille korral kaks mittemetalli aatomit jagavad omavahel elektronpaare?",
-        answers: ["Iooniline side", "Metalliline side", "Kovalentne side", "Vesinikside"],
-        correctAnswer: "Kovalentne side"
+        text: "Kuidas nimetatakse reaktsioonivõrrandis võrdusmärgist paremal pool olevaid aineid?",
+        answers: ["Saadused", "Lähteained", "Reaktsiooni vahesaadused", "Reaktsiooni soojus"],
+        correctAnswer: "Saadused"
     },
     {
-        text: "Milliste omadustega iseloomustatakse mittemetalle?",
-        answers: ["Kõrge sulamis- ja keemistemperatuur, hea juhtivus", "Madal sulamis- ja keemistemperatuur, halb juhtivus", "Kõrge elektrijuhtivus, madal keemistemperatuur", "Madal sulamistemperatuur, hea soojusjuhtivus"],
-        correctAnswer: "Madal sulamis- ja keemistemperatuur, halb juhtivus"
+        text: "Mis on alkaanid?",
+        answers: ["süsivesinikud, kus esinevad ainult üksiksidemed", "süsivesinikud, mis sisaldavad topelt- või kolmiksidemeid", "aromaatsed süsivesinikud", "polümeerid"],
+        correctAnswer: "süsivesinikud, kus esinevad ainult üksiksidemed"
     },
     {
-        text: "Kuidas nimetatakse ainet, mis koosneb vaid ühest keemilisest elemendist?",
-        answers: ["Segu", "Liitaine", "Lihtaine", "Komposiitmaterjal"],
-        correctAnswer: "Lihtaine"
-    }
+        text: "Mis on reaktsiooni tüüp, milles aine hapnikuga reageerides soojust ja valgust eraldab?",
+        answers: ["Põlemine", "Redutseerimine", "Oksüdatsioon", "Neutraliseerimine"],
+        correctAnswer: "Põlemine"
+    }    
 ];
 
 function updateOpponentDisplay() {
