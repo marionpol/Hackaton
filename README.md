@@ -5,9 +5,9 @@ The game is in estonian and follows the school education system programme for ch
 
 The purpose of this game is to make studying and learning easier for students who may not understand chemistry that well.
 
-EST 
 
-# Kasutusjuhend
+
+# Kasutusjuhend EST 
 
 
 Mängu alustamine
