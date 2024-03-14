@@ -146,12 +146,14 @@ header a:hover {
     height: 100%; 
 }
 .hp {
+    background-color:rgba(45,45,45,1);
     color: white;
     font-weight: bold;
-    margin-top: 1rem;
     font-size: 24px;
+    border-radius: 2rem;
+    margin-left: 100px;
+    margin-right: 100px;
 }
-
 .rpg-textbox {
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
