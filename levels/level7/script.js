@@ -15,30 +15,30 @@ const opponents = [
 // Questions array remains the same
 let questions = [
     {
-        text: "Milline keemiline side tekkib metalli aatomite vahel, kus nad jagavad vabalt liiguvaid elektrone?",
-        answers: ["Kovalentne side", "Metalliline side", "Iooniline side", "Vesinikside"],
-        correctAnswer: "Metalliline side"
+        text: "Milline neist ei ole karboksüülhape?",
+        answers: ["Piimhape", "Õunhape", "Viinhape", "Pirnhape"],
+        correctAnswer: "Pirnhape"
     },
     {
-        text: "Mis on ioon?",
-        answers: ["Aatom, mis on kaotanud või saanud elektrone", "Aatom, mis on kaotanud prootone", "Aine, mis koosneb ainult ühest molekulist", "Aatom, mis on kaotanud neutroone"],
-        correctAnswer: "Aatom, mis on kaotanud või saanud elektrone"
+        text: "Mis on CH3COOC5H11 nimetus?",
+        answers: ["Pentüületaat", "Metüületaat", "Propüületaat", "Butüületaat"],
+        correctAnswer: "Pentüületaat"
     },
     {
-        text: "Mis on see keemiline side, mille korral kaks mittemetalli aatomit jagavad omavahel elektronpaare?",
-        answers: ["Iooniline side", "Metalliline side", "Kovalentne side", "Vesinikside"],
-        correctAnswer: "Kovalentne side"
+        text: "Miks kasutatakse teatud estreid toiduainetööstuses?",
+        answers: ["Meeldiv lõhn", "Säilitusomadused", "Värvuse tugevdamine", "Tekstuuri parandamine"],
+        correctAnswer: "Meeldiv lõhn"
     },
     {
-        text: "Milliste omadustega iseloomustatakse mittemetalle?",
-        answers: ["Kõrge sulamis- ja keemistemperatuur, hea juhtivus", "Madal sulamis- ja keemistemperatuur, halb juhtivus", "Kõrge elektrijuhtivus, madal keemistemperatuur", "Madal sulamistemperatuur, hea soojusjuhtivus"],
-        correctAnswer: "Madal sulamis- ja keemistemperatuur, halb juhtivus"
+        text: "Mis on estrite hüdrolüüsi lõpp-produktid?",
+        answers: ["Karboksüülhape ja alkohol", "Alkohol ja eeter", "Ketoon ja alkohol", "Alkohol ja aldehüüd"],
+        correctAnswer: "Karboksüülhape ja alkohol"
     },
     {
-        text: "Kuidas nimetatakse ainet, mis koosneb vaid ühest keemilisest elemendist?",
-        answers: ["Segu", "Liitaine", "Lihtaine", "Komposiitmaterjal"],
-        correctAnswer: "Lihtaine"
-    }
+        text: "Mis on polüestrid?",
+        answers: ["Toodetud läbi alkoholi ja karboksüülhappe kondensatsiooni, eraldades vesi", "Polümeerid, mis on toodetud monomeeride polümerisatsioonil, eraldades ammoniaaki", "Sünteetilised kiud, mis on toodetud naturaalsetest mineraalidest", "Biopolümeerid, mis on toodetud bakterite poolt"],
+        correctAnswer: "Toodetud läbi alkoholi ja karboksüülhappe kondensatsiooni, eraldades vesi"
+    }    
 ];
 
 function updateOpponentDisplay() {
