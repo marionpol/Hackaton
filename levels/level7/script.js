@@ -98,7 +98,11 @@ function checkAnswer(selectedAnswer) {
         document.getElementById('opponentCharacterHp').textContent = `HP: ${opponents[currentOpponentIndex].hp}`;
         // Add shake effect to opponent when taking damage
         opponentCharacter.classList.add('shake');
-        setTimeout(() => opponentCharacter.classList.remove('shake'), 500); // Remove shake effect after 0.5 seconds
+        opponentCharacter.src = '../img/slimeDMG.webp';
+        setTimeout(() => {
+            opponentCharacter.classList.remove('shake');
+            opponentCharacter.src = '../img/slime.gif'; // Set the image source to an empty string
+        }, 500); // Remove shake effect and image source after 0.5 seconds
 
 
         if (opponents[currentOpponentIndex].hp <= 0) {
