@@ -20,7 +20,7 @@ let questions = [
         correctAnswer: "CO2"
     },
     {
-        text: "Nimeta kolm peamist kasutust leitavad asendatud alkaanid.",
+        text: "Nimeta kolm peamist kasutust leitavad 'asendatud alkaanid'.",
         answers: ["Süsivesinike halogeeniühendid, alkoholid ja primaarsed amiinid", "Süsivesinike sulfonaadid, esterid ja ketoonid", "Alkaanid, alkoholid ja karboksüülhapped", "Estrid, aldehüüdid ja ketoonid"],
         correctAnswer: "Süsivesinike halogeeniühendid, alkoholid ja primaarsed amiinid"
     },
