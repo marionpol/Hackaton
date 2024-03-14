@@ -15,30 +15,30 @@ const opponents = [
 // Questions array remains the same
 let questions = [
     {
-        text: "Milline keemiline side tekkib metalli aatomite vahel, kus nad jagavad vabalt liiguvaid elektrone?",
-        answers: ["Kovalentne side", "Metalliline side", "Iooniline side", "Vesinikside"],
-        correctAnswer: "Metalliline side"
+        text: "Kuidas jaotatakse pH skaala (vasakult paremale)?",
+        answers: ["Happeline, neutraalne, aluseline", "Aluseline, neutraalne, happeline", "Neutraalne, happeline, aluseline", "Aluseline, happeline, neutraalne"],
+        correctAnswer: "Happeline, neutraalne, aluseline"
     },
     {
-        text: "Mis on ioon?",
-        answers: ["Aatom, mis on kaotanud või saanud elektrone", "Aatom, mis on kaotanud prootone", "Aine, mis koosneb ainult ühest molekulist", "Aatom, mis on kaotanud neutroone"],
-        correctAnswer: "Aatom, mis on kaotanud või saanud elektrone"
+        text: "Nimeta kulla tähis.",
+        answers: ["Au", "Ag", "Cu", "Fe"],
+        correctAnswer: "Au"
     },
     {
-        text: "Mis on see keemiline side, mille korral kaks mittemetalli aatomit jagavad omavahel elektronpaare?",
-        answers: ["Iooniline side", "Metalliline side", "Kovalentne side", "Vesinikside"],
-        correctAnswer: "Kovalentne side"
+        text: "Mitu sidet on süsinikul?",
+        answers: ["4", "2", "3", "1"],
+        correctAnswer: "4"
     },
     {
-        text: "Milliste omadustega iseloomustatakse mittemetalle?",
-        answers: ["Kõrge sulamis- ja keemistemperatuur, hea juhtivus", "Madal sulamis- ja keemistemperatuur, halb juhtivus", "Kõrge elektrijuhtivus, madal keemistemperatuur", "Madal sulamistemperatuur, hea soojusjuhtivus"],
-        correctAnswer: "Madal sulamis- ja keemistemperatuur, halb juhtivus"
+        text: "Mis on aine nimetus, mis koosneb hapnikust ja mõnest mittemetallist ning reageerib veega moodustades hapet?",
+        answers: ["Happeline oksiid", "Aluseline oksiid", "Neutraalne oksiid", "Metalliline oksiid"],
+        correctAnswer: "Happeline oksiid"
     },
     {
-        text: "Kuidas nimetatakse ainet, mis koosneb vaid ühest keemilisest elemendist?",
-        answers: ["Segu", "Liitaine", "Lihtaine", "Komposiitmaterjal"],
-        correctAnswer: "Lihtaine"
-    }
+        text: "Mis on ained, mis vees lahustudes prootoneid eraldavad?",
+        answers: ["Happed", "Alused", "Soolad", "Oksiidid"],
+        correctAnswer: "Happed"
+    }    
 ];
 
 function updateOpponentDisplay() {
