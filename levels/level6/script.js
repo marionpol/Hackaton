@@ -102,7 +102,7 @@ function checkAnswer(selectedAnswer) {
         if (mainCharacterHp <= 0) {
             mainCharacter.src ='../img/jukuX-X.gif';
             setTimeout(() => {
-                alert("Kaotasid kõik elud. Mäng läbi.");
+                alert("Game Over! You've lost all your HP.");
                 window.location.href = '../../levels.html';
             }, 1500);
         } else {

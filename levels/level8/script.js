@@ -15,30 +15,31 @@ const opponents = [
 // Questions array remains the same
 let questions = [
     {
-        text: "Milline keemiline side tekkib metalli aatomite vahel, kus nad jagavad vabalt liiguvaid elektrone?",
-        answers: ["Kovalentne side", "Metalliline side", "Iooniline side", "Vesinikside"],
-        correctAnswer: "Metalliline side"
+        text: "Mis eraldatakse polüestrite tootmisel?",
+        answers: ["Vesi", "Süsihappegaas", "Ammoniaak", "Etanool"],
+        correctAnswer: "Vesi"
     },
     {
-        text: "Mis on ioon?",
-        answers: ["Aatom, mis on kaotanud või saanud elektrone", "Aatom, mis on kaotanud prootone", "Aine, mis koosneb ainult ühest molekulist", "Aatom, mis on kaotanud neutroone"],
-        correctAnswer: "Aatom, mis on kaotanud või saanud elektrone"
+        text: "Mis on pildil? (pilt1)",
+        answers: ["Polükondensatsioon", "Hüdroksüleerimine", "Hüdratatsioon", "Polümerisatsioon"],
+        correctAnswer: "Polükondensatsioon"
     },
     {
-        text: "Mis on see keemiline side, mille korral kaks mittemetalli aatomit jagavad omavahel elektronpaare?",
-        answers: ["Iooniline side", "Metalliline side", "Kovalentne side", "Vesinikside"],
-        correctAnswer: "Kovalentne side"
+        text: "Kas süsiniku ja vesinikudega saab teha kaks kaksiksidet ja üks üksikside?",
+        answers: ["Jah", "Ei", "Ainult teatud tingimustel", "Ainult kõrge temperatuuri juures"],
+        correctAnswer: "Ei"
     },
     {
-        text: "Milliste omadustega iseloomustatakse mittemetalle?",
-        answers: ["Kõrge sulamis- ja keemistemperatuur, hea juhtivus", "Madal sulamis- ja keemistemperatuur, halb juhtivus", "Kõrge elektrijuhtivus, madal keemistemperatuur", "Madal sulamistemperatuur, hea soojusjuhtivus"],
-        correctAnswer: "Madal sulamis- ja keemistemperatuur, halb juhtivus"
+        text: "Mis on lämmastikoksiid?",
+        answers: ["NO", "NO2", "N2O", "NO3"],
+        correctAnswer: "NO2"
     },
     {
-        text: "Kuidas nimetatakse ainet, mis koosneb vaid ühest keemilisest elemendist?",
-        answers: ["Segu", "Liitaine", "Lihtaine", "Komposiitmaterjal"],
-        correctAnswer: "Lihtaine"
-    }
+        text: "Milline valem esindab etanooli?",
+        answers: ["C2H5OH", "C2H4O", "CH3OH", "C3H8O"],
+        correctAnswer: "C2H5OH"
+    }    
+    
 ];
 
 function updateOpponentDisplay() {
@@ -101,7 +102,7 @@ function checkAnswer(selectedAnswer) {
         if (mainCharacterHp <= 0) {
             mainCharacter.src ='../img/jukuX-X.gif';
             setTimeout(() => {
-                alert("Kaotasid kõik elud. Mäng läbi.");
+                alert("Game Over! You've lost all your HP.");
                 window.location.href = '../../levels.html';
             }, 1500);
         } else {
