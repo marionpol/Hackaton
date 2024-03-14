@@ -15,30 +15,40 @@ const opponents = [
 // Questions array remains the same
 let questions = [
     {
-        text: "Milline keemiline side tekkib metalli aatomite vahel, kus nad jagavad vabalt liiguvaid elektrone?",
-        answers: ["Kovalentne side", "Metalliline side", "Iooniline side", "Vesinikside"],
-        correctAnswer: "Metalliline side"
+        text: "Kuidas tekivad molekulaarsed ained?",
+        answers: ["Kovalentsete sidemete kaudu", "Iooniliste sidemete kaudu", "Metalliliste sidemete kaudu", "Füüsikalise segunemise teel"],
+        correctAnswer: "Kovalentsete sidemete kaudu"
     },
     {
-        text: "Mis on ioon?",
-        answers: ["Aatom, mis on kaotanud või saanud elektrone", "Aatom, mis on kaotanud prootone", "Aine, mis koosneb ainult ühest molekulist", "Aatom, mis on kaotanud neutroone"],
-        correctAnswer: "Aatom, mis on kaotanud või saanud elektrone"
+        text: "Kuidas tekivad mittemolekulaarsed ained?",
+        answers: ["Erinevate sidemetega, ioonilised/metallilised", "Ainult kovalentsete sidemete kaudu", "Ainult füüsikalise segunemise teel", "Ainult hüdrogeensidemete kaudu"],
+        correctAnswer: "Erinevate sidemetega, ioonilised/metallilised"
     },
     {
-        text: "Mis on see keemiline side, mille korral kaks mittemetalli aatomit jagavad omavahel elektronpaare?",
-        answers: ["Iooniline side", "Metalliline side", "Kovalentne side", "Vesinikside"],
-        correctAnswer: "Kovalentne side"
+        text: "Millest koosnevad molekulaarsed ained?",
+        answers: ["Molekulid, kovalentselt seotud", "Aatomid, iooniliselt seotud", "Metallid, vabalt liikuvate elektronidega", "Aatomid, ilma sidemeteta"],
+        correctAnswer: "Molekulid, kovalentselt seotud"
     },
     {
-        text: "Milliste omadustega iseloomustatakse mittemetalle?",
-        answers: ["Kõrge sulamis- ja keemistemperatuur, hea juhtivus", "Madal sulamis- ja keemistemperatuur, halb juhtivus", "Kõrge elektrijuhtivus, madal keemistemperatuur", "Madal sulamistemperatuur, hea soojusjuhtivus"],
-        correctAnswer: "Madal sulamis- ja keemistemperatuur, halb juhtivus"
+        text: "Millest koosnevad mittemolekulaarsed ained?",
+        answers: ["Aatomid/ioonid, mitmekesised sidemed", "Ainult molekulid, kovalentselt seotud", "Ainult metallid, vabalt liikuvate elektronidega", "Ainult ioonid, iooniliselt seotud"],
+        correctAnswer: "Aatomid/ioonid, mitmekesised sidemed"
     },
     {
-        text: "Kuidas nimetatakse ainet, mis koosneb vaid ühest keemilisest elemendist?",
-        answers: ["Segu", "Liitaine", "Lihtaine", "Komposiitmaterjal"],
-        correctAnswer: "Lihtaine"
-    }
+        text: "Mis on hapnikuga ühend?",
+        answers: ["Oksiid", "Hüdroksiid", "Karbonaat", "Nitriit"],
+        correctAnswer: "Oksiid"
+    },
+    {
+        text: "Mis on Vääveldioksiid?",
+        answers: ["SO3", "SO2", "CO2", "H2SO4"],
+        correctAnswer: "SO2"
+    },
+    {
+        text: "Mida näitab reaktsioonivõrrand?",
+        answers: ["Näitab, kuidas ühed ained muunduvad teisteks aineteks", "Kirjeldab ainult füüsikalisi muutusi", "Määrab ainete temperatuuri muutused", "Näitab ainult keemilise reaktsiooni kiirust"],
+        correctAnswer: "Näitab, kuidas ühed ained muunduvad teisteks aineteks"
+    }    
 ];
 
 function updateOpponentDisplay() {
