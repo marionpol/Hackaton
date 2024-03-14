@@ -95,6 +95,7 @@ function checkAnswer(selectedAnswer) {
         document.getElementById('mainCharacterHp').textContent = `HP: ${mainCharacterHp}`;
 
         if (mainCharacterHp <= 0) {
+            mainCharacter.src ='../img/juku_dead.gif';
             setTimeout(() => {
                 alert("Game Over! You've lost all your HP.");
                 window.location.href = '../../levels.html';
