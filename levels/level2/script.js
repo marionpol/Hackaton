@@ -120,7 +120,7 @@ function checkAnswer(selectedAnswer) {
         if (mainCharacterHp <= 0) {
             setTimeout(() => {
                 alert("Game Over! You've lost all your HP.");
-                window.location.href = 'levels.html';
+                window.location.href = '../../levels.html';
             }, 1500);
         } else {
             // Re-enable buttons if game is not over
