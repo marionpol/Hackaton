@@ -1,6 +1,18 @@
 document.addEventListener('DOMContentLoaded', showQuestion); // Initialize the game when the document is ready
 
 let currentQuestionIndex = 0;
+let currentOpponentIndex = 0; // New variable to track the current opponent
+let mainCharacterHp = 100;
+let opponentCharacterHp = 100; // This will now be dynamic based on the opponent
+
+// Define your opponents array with names and HP
+const opponents = [
+    { name: "Mad Scientist", hp: 100 },
+    { name: "Chemical Monster", hp: 100 },
+    // Add more opponents as needed
+];
+
+// Questions array remains the same
 let questions = [
     {
         text: "Milline keemiline side tekkib metalli aatomite vahel, kus nad jagavad vabalt liiguvaid elektrone?",
@@ -12,17 +24,54 @@ let questions = [
         answers: ["Aatom, mis on kaotanud või saanud elektrone", "Aatom, mis on kaotanud prootone", "Aine, mis koosneb ainult ühest molekulist", "Aatom, mis on kaotanud neutroone"],
         correctAnswer: "Aatom, mis on kaotanud või saanud elektrone"
     },
+    {
+        text: "Mis on see keemiline side, mille korral kaks mittemetalli aatomit jagavad omavahel elektronpaare?",
+        answers: ["Iooniline side", "Metalliline side", "Kovalentne side", "Vesinikside"],
+        correctAnswer: "Kovalentne side"
+    },
+    {
+        text: "Milliste omadustega iseloomustatakse mittemetalle?",
+        answers: ["Kõrge sulamis- ja keemistemperatuur, hea juhtivus", "Madal sulamis- ja keemistemperatuur, halb juhtivus", "Kõrge elektrijuhtivus, madal keemistemperatuur", "Madal sulamistemperatuur, hea soojusjuhtivus"],
+        correctAnswer: "Madal sulamis- ja keemistemperatuur, halb juhtivus"
+    },
+    {
+        text: "Kuidas nimetatakse ainet, mis koosneb vaid ühest keemilisest elemendist?",
+        answers: ["Segu", "Liitaine", "Lihtaine", "Komposiitmaterjal"],
+        correctAnswer: "Lihtaine"
+    },
+    {
+        text: "Milline termin kirjeldab ainet, mis on moodustunud kahest või enamast keemiliselt seotud erinevast keemilisest elemendist?",
+        answers: ["Lihtaine", "Segu", "Liitaine", "Kovalentne ühend"],
+        correctAnswer: "Liitaine"
+    },
+    {
+        text: "Kuidas tekivad molekulaarsed ained?",
+        answers: ["Iooniliste sidemete kaudu", "Kovalentsete sidemete kaudu", "Metalliliste sidemete kaudu", "Füüsikalise segunemise teel"],
+        correctAnswer: "Kovalentsete sidemete kaudu"
+    },
 ];
-let mainCharacterHp = 100;
-let opponentCharacterHp = 100;
+
+function updateOpponentDisplay() {
+    if (currentOpponentIndex < opponents.length) {
+        const currentOpponent = opponents[currentOpponentIndex];
+        document.getElementById('opponentCharacter').src = currentOpponent.src;
+        opponentCharacterHp = currentOpponent.hp;
+        document.getElementById('opponentCharacterHp').textContent = `HP: ${opponentCharacterHp}`;
+    }
+}
 
 function showQuestion() {
+    if (currentQuestionIndex >= questions.length) {
+        alert("All questions answered!");
+        return;
+    }
+
     const question = questions[currentQuestionIndex];
-    const questionElement = document.getElementById('question');
-    questionElement.innerHTML = `<p>${question.text}</p>`;
+    document.getElementById('question').innerHTML = `<p>${question.text}</p>`;
+    
     const answersElement = document.getElementById('answers');
     answersElement.innerHTML = ''; // Clear previous answers
-
+    
     question.answers.forEach(answer => {
         const button = document.createElement('button');
         button.textContent = answer;
@@ -33,27 +82,58 @@ function showQuestion() {
 
 function checkAnswer(selectedAnswer) {
     const feedbackElement = document.getElementById('feedback');
+    const answersElement = document.getElementById('answers');
+    const mainCharacter = document.getElementById('mainCharacter');
+    const gameScreen = document.body; // Assuming you want to change the background of the whole page
+
+    // Disable all answer buttons temporarily
+    document.querySelectorAll('#answers button').forEach(button => button.disabled = true);
+
     if (selectedAnswer === questions[currentQuestionIndex].correctAnswer) {
-        feedbackElement.textContent = 'Õige! Järgmine monster!';
-        opponentCharacterHp -= 20; // Damage to opponent
-        document.getElementById('opponentCharacterHp').textContent = `HP: ${opponentCharacterHp}`;
-        currentQuestionIndex++;
-        if (currentQuestionIndex < questions.length) {
-            showQuestion();
-        } else {
-            feedbackElement.textContent = 'Sa võitsid kõik monsterid!';
-            document.getElementById('nextButton').disabled = true; // Disable the button when the game ends
+        feedbackElement.innerHTML = '<span style="color: green;">Correct!</span>';
+        opponents[currentOpponentIndex].hp -= 20;
+        document.getElementById('opponentCharacterHp').textContent = `HP: ${opponents[currentOpponentIndex].hp}`;
+
+        if (opponents[currentOpponentIndex].hp <= 0) {
+            if (currentOpponentIndex < opponents.length - 1) {
+                feedbackElement.innerHTML += ' <span style="color: blue;">You defeated the opponent! Next opponent comes.</span>';
+                currentOpponentIndex++;
+                updateOpponentDisplay();
+            } else {
+                feedbackElement.innerHTML += ' <span style="color: blue;">All opponents defeated! Congratulations!</span>';
+                // Additional logic for game completion can be added here
+            }
         }
+        
+        setTimeout(() => {
+            currentQuestionIndex++;
+            if (currentQuestionIndex >= questions.length) {
+                currentQuestionIndex = 0; // Reset questions if they run out
+            }
+            showQuestion();
+        }, 1000); // Wait for 1 sec before moving to the next question or opponent
     } else {
-        feedbackElement.textContent = 'Vale! Proovi uuesti!';
-        mainCharacterHp -= 20; // Damage to main character
+        feedbackElement.innerHTML = '<span style="color: red;">Incorrect! Try again.</span>';
+        mainCharacterHp -= 20;
         document.getElementById('mainCharacterHp').textContent = `HP: ${mainCharacterHp}`;
+
+        if (mainCharacterHp <= 0) {
+            setTimeout(() => {
+                alert("Game Over! You've lost all your HP.");
+                window.location.href = 'levels.html';
+            }, 1500);
+        } else {
+            // Re-enable buttons if game is not over
+            setTimeout(() => {
+                document.querySelectorAll('#answers button').forEach(button => button.disabled = false);
+            }, 1000);
+            // Shake effect and red screen
+            mainCharacter.classList.add('shake');
+            gameScreen.classList.add('damage-taken');
+            setTimeout(() => {
+                mainCharacter.classList.remove('shake');
+                gameScreen.classList.remove('damage-taken');
+            }, 500); // Keep this duration the same as your CSS animation
+        }
     }
 }
-
-// Event listener to manually proceed to the next question
-document.getElementById('nextButton').addEventListener('click', () => {
-    if (currentQuestionIndex < questions.length) {
-        showQuestion();
-    }
-});
