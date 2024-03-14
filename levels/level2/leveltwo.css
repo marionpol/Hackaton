@@ -163,6 +163,11 @@ header a:hover {
     font-style: normal;
 }
 
+.rpg-textbox p {
+    margin: 0px;
+    padding-top: 10px;
+}
+
 #feedback {
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;

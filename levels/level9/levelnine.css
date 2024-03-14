@@ -90,8 +90,9 @@ header a:hover {
 
 .whole-textbox-container {
     margin-top: 4rem;
+    background-color: rgba(45,45,45,1);
+    border-radius: 2em;
 }
-
 .textbox-container, .answer-boxes {
     text-align: center;
     color: white;
@@ -159,6 +160,11 @@ header a:hover {
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+}
+
+.rpg-textbox p {
+    margin: 0px;
+    padding-top: 10px;
 }
 
 #feedback {
