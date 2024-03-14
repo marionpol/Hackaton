@@ -20,7 +20,7 @@ body {
     width: 1000px;
     height: 800px;
     margin: auto;
-    background-image: url("/levels/img/swampscene-pixelicious.png");
+    background-image: url("../img/swampscene-pixelicious.png");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 20px;

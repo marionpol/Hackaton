@@ -20,7 +20,7 @@ body {
     width: 1000px;
     height: 800px;
     margin: auto;
-    background-image: url("/levels/img/ghostgraveyardbase.png");
+    background-image: url("../img/ghostgraveyardbase.png");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 20px;
