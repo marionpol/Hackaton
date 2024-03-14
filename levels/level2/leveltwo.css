@@ -115,19 +115,32 @@ header a:hover {
     
 }
 
-.button {
+.answer-boxes button {
     margin-top: 1rem;
     display: inline-block;
-    padding: 5px 20px;
+    padding: 10px 10px;
+    margin: 5px;
     background-color: #5DFDCB;
     border: none;
     color: black;
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     cursor: pointer;
     border-radius: 2rem;
     transition: background-color 0.3s;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.answer-boxes button:disabled {
+    background-color: gray;
+}
+
+.answer-boxes button:hover {
+    transform: scale(1.1);
+    background-color: #c4acfd;
 }
 
 .picture-container img {
@@ -139,6 +152,13 @@ header a:hover {
     margin-top: 1rem;
     font-size: 24px;
 }
+
+.rpg-textbox {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
 @keyframes shake {
     0%, 100% { transform: translateX(0); }
     25% { transform: translateX(-5px); }
