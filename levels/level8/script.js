@@ -20,8 +20,8 @@ let questions = [
         correctAnswer: "Vesi"
     },
     {
-        text: "Mis on pildil? (pilt1)",
-        answers: ["Polükondensatsioon", "Hüdroksüleerimine", "Hüdratatsioon", "Polümerisatsioon"],
+        text: "Milline protsess kirjeldab makromolekulide moodustumist väiksematest molekulidest, eemaldades samal ajal väikese molekuli, nagu vesi?",
+        answers: ["Polükondensatsioon", "Hüdrolüüs", "Polümerisatsioon", "Sublimatsioon"],
         correctAnswer: "Polükondensatsioon"
     },
     {
