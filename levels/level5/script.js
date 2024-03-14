@@ -15,30 +15,30 @@ const opponents = [
 // Questions array remains the same
 let questions = [
     {
-        text: "Milline keemiline side tekkib metalli aatomite vahel, kus nad jagavad vabalt liiguvaid elektrone?",
-        answers: ["Kovalentne side", "Metalliline side", "Iooniline side", "Vesinikside"],
-        correctAnswer: "Metalliline side"
+        text: "Milliste kriteeriumide alusel happeid tavaliselt klassifitseeritakse?",
+        answers: ["Vesiniku arv, hapnikusisaldus, tugevus", "Värvi muutus, pH tase, reaktsioonikiirus", "Agregaatolek, tihedus, sulamispunkt", "Elektrijuhtivus, viskoossus, põlemispunkt"],
+        correctAnswer: "Vesiniku arv, hapnikusisaldus, tugevus"
     },
     {
-        text: "Mis on ioon?",
-        answers: ["Aatom, mis on kaotanud või saanud elektrone", "Aatom, mis on kaotanud prootone", "Aine, mis koosneb ainult ühest molekulist", "Aatom, mis on kaotanud neutroone"],
-        correctAnswer: "Aatom, mis on kaotanud või saanud elektrone"
+        text: "Mis määrab, kas hape on vesilahuses tugev või nõrk?",
+        answers: ["Ioondumine vesilahuses", "Vesilahuse pH tase", "Happe molekulmass", "Lahustuvus vees"],
+        correctAnswer: "Ioondumine vesilahuses"
     },
     {
-        text: "Mis on see keemiline side, mille korral kaks mittemetalli aatomit jagavad omavahel elektronpaare?",
-        answers: ["Iooniline side", "Metalliline side", "Kovalentne side", "Vesinikside"],
-        correctAnswer: "Kovalentne side"
+        text: "Mis on suured molekulid, mis koosnevad kovalentsete sidemetega seotud korduvatest üksustest?",
+        answers: ["Polümeerid", "Monomeerid", "Elektrolüüdid", "Katalüsaatorid"],
+        correctAnswer: "Polümeerid"
     },
     {
-        text: "Milliste omadustega iseloomustatakse mittemetalle?",
-        answers: ["Kõrge sulamis- ja keemistemperatuur, hea juhtivus", "Madal sulamis- ja keemistemperatuur, halb juhtivus", "Kõrge elektrijuhtivus, madal keemistemperatuur", "Madal sulamistemperatuur, hea soojusjuhtivus"],
-        correctAnswer: "Madal sulamis- ja keemistemperatuur, halb juhtivus"
+        text: "Nimeta alkaan millel on 1-10 süsinikuaatomit.",
+        answers: ["metaan, etaan, propaan, butaan, pentaan, heksaan, oktan, nonaan, dekaan", "metaan, butaan, propanool, etanool", "glükoos, fruktoos, sahharoos", "atsetaat, bensoaat, formiaat"],
+        correctAnswer: "metaan, etaan, propaan, butaan, pentaan, heksaan, oktan, nonaan, dekaan"
     },
     {
-        text: "Kuidas nimetatakse ainet, mis koosneb vaid ühest keemilisest elemendist?",
-        answers: ["Segu", "Liitaine", "Lihtaine", "Komposiitmaterjal"],
-        correctAnswer: "Lihtaine"
-    }
+        text: "Kas alkohol on asendatud alkaan?",
+        answers: ["jah", "ei", "Sõltub alkoholist", "Ainult teatud juhtudel"],
+        correctAnswer: "jah"
+    }    
 ];
 
 function updateOpponentDisplay() {

@@ -15,30 +15,31 @@ const opponents = [
 // Questions array remains the same
 let questions = [
     {
-        text: "Milline keemiline side tekkib metalli aatomite vahel, kus nad jagavad vabalt liiguvaid elektrone?",
-        answers: ["Kovalentne side", "Metalliline side", "Iooniline side", "Vesinikside"],
-        correctAnswer: "Metalliline side"
+        text: "Mis on Süsinikdioksiid?",
+        answers: ["CO", "CO2", "C2O", "C2O2"],
+        correctAnswer: "CO2"
     },
     {
-        text: "Mis on ioon?",
-        answers: ["Aatom, mis on kaotanud või saanud elektrone", "Aatom, mis on kaotanud prootone", "Aine, mis koosneb ainult ühest molekulist", "Aatom, mis on kaotanud neutroone"],
-        correctAnswer: "Aatom, mis on kaotanud või saanud elektrone"
+        text: "Nimeta kolm peamist kasutust leitavad asendatud alkaanid.",
+        answers: ["Süsivesinike halogeeniühendid, alkoholid ja primaarsed amiinid", "Süsivesinike sulfonaadid, esterid ja ketoonid", "Alkaanid, alkoholid ja karboksüülhapped", "Estrid, aldehüüdid ja ketoonid"],
+        correctAnswer: "Süsivesinike halogeeniühendid, alkoholid ja primaarsed amiinid"
     },
     {
-        text: "Mis on see keemiline side, mille korral kaks mittemetalli aatomit jagavad omavahel elektronpaare?",
-        answers: ["Iooniline side", "Metalliline side", "Kovalentne side", "Vesinikside"],
-        correctAnswer: "Kovalentne side"
+        text: "Nimeta üks karbonüülühend.",
+        answers: ["Aldehüüdid, diaalid, ketoonid ja karboksüülhapped", "Alkoholid, estrid, eetrid", "Alkaanid, alkeenid, alküünid", "Hapnik, vesinik, lämmastik"],
+        correctAnswer: "Aldehüüdid, diaalid, ketoonid ja karboksüülhapped"
     },
     {
-        text: "Milliste omadustega iseloomustatakse mittemetalle?",
-        answers: ["Kõrge sulamis- ja keemistemperatuur, hea juhtivus", "Madal sulamis- ja keemistemperatuur, halb juhtivus", "Kõrge elektrijuhtivus, madal keemistemperatuur", "Madal sulamistemperatuur, hea soojusjuhtivus"],
-        correctAnswer: "Madal sulamis- ja keemistemperatuur, halb juhtivus"
+        text: "Kuidas nimetatakse etaanhapet rahvakeeli?",
+        answers: ["Äädikhape", "Vesinikperoksiid", "Salpeterhape", "Väävelhape"],
+        correctAnswer: "Äädikhape"
     },
     {
-        text: "Kuidas nimetatakse ainet, mis koosneb vaid ühest keemilisest elemendist?",
-        answers: ["Segu", "Liitaine", "Lihtaine", "Komposiitmaterjal"],
-        correctAnswer: "Lihtaine"
+        text: "Nimetage hõbeda tähis.",
+        answers: ["Ag", "Au", "Hg", "Al"],
+        correctAnswer: "Ag"
     }
+    
 ];
 
 function updateOpponentDisplay() {
